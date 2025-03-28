@@ -139,8 +139,8 @@ class ColumnOptionProvider
             ["91.7% (col-$screen-11)", "col-$screen-11"],
             ["100% (col-$screen-12)", "col-$screen-12"],
             [self::LOCALIZATION_FILE . 'grid.label.moreOptions', '--div--'],
-            [self::LOCALIZATION_FILE . 'grid.label.hidden', "hidden-$screen"],
-            [self::LOCALIZATION_FILE . 'grid.label.visible', "visible-$screen"],
+            [self::LOCALIZATION_FILE . 'grid.label.hidden', "d-$screen-none"],
+            [self::LOCALIZATION_FILE . 'grid.label.visible', "d-$screen-block"],
         ];
     }
 
