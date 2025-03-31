@@ -73,8 +73,6 @@ $client4cols = (new ContainerConfiguration(
 ))->setIcon('EXT:container/Resources/Public/Icons/container-4col.svg');
 
 
-
-
 $client3tabs = (new ContainerConfiguration(
     'client-3tabs', // CType
     $gridLocalizationFile . '3tabs.title', // label
@@ -89,8 +87,6 @@ $client3tabs = (new ContainerConfiguration(
 ))->setIcon('EXT:container/Resources/Public/Icons/container-3col.svg');
 $containerRegistry->configureContainer($client3tabs);
 $addFlexForm($client3tabs);
-
-
 
 
 $containerRegistry->configureContainer($client4cols);

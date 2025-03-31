@@ -6,6 +6,9 @@
 			<trans-unit id="2cols.title" xml:space="preserve" approved="yes">
 				<source>2 columns</source>
 			</trans-unit>
+			<trans-unit id="3tabs.title" xml:space="preserve" approved="yes">
+				<source>3 tabs</source>
+			</trans-unit>
 			<trans-unit id="3cols.title" xml:space="preserve" approved="yes">
 				<source>3 columns</source>
 			</trans-unit>
