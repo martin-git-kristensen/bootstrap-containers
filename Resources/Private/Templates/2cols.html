@@ -2,7 +2,10 @@
     data-namespace-typo3-fluid="true"
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:bootstrapContainers="http://typo3.org/ns/Iresults/BootstrapContainers/ViewHelpers">
-    <div id="c{data.uid}" class="row">
+
+    {f:if(condition: '{data.background_color_class} == "none"', then: 'dark', else: '{data.background_color_class}') -> f:variable(name: 'color')}
+
+    <div id="c{data.uid}" class="row {color}">
         <div class="{configuration->bootstrapContainers:columnClass(column: 1, default: 'col-md-6')}">
             <f:for each="{children_101}" as="record">
                 <f:format.raw>{record.renderedContent}</f:format.raw>
