@@ -130,3 +130,14 @@ $clientAccordion = (new ContainerConfiguration(
 ))->setIcon('EXT:container/Resources/Public/Icons/container-1col.svg');
 $containerRegistry->configureContainer($clientAccordion);
 $addFlexForm($clientAccordion);
+
+
+
+
+$types = ['client-container', 'client-2cols', 'client-3cols', 'client-4cols', 'client-3tabs'];
+
+foreach ($types as $type) {
+        $GLOBALS['TCA']['tt_content']['types'][$type]['columnsOverrides']['background_color_class'] = [
+            'displayCond' => 'FIELD:CType:=:___never___',
+        ];
+    }
