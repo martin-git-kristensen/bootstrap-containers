@@ -6,9 +6,9 @@
         "GPL-2.0-or-later"
     ],
     "require": {
-        "b13/container": "^3.1",
+        "b13/container": "^3.1 || ^4",
         "twbs/bootstrap-sass": "3.*",
-        "typo3/cms-core": "^12.4 || ^13.4"
+        "typo3/cms-core": "^12.4 || ^13.4 || ^14"
     },
     "autoload": {
         "psr-4": {
